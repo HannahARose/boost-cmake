@@ -39,16 +39,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 set(BOOST_LIBS_REQUIRED headers)
-set(BOOST_EXCLUDE_LIBRARIES
-    serialization
-    iostreams
-    timer
-    locale
-    log
-    graph
-    property_tree
-    wave
-)
+set(BOOST_EXCLUDE_LIBRARIES)
 
 if(PROJECT_IS_TOP_LEVEL AND NOT BOOST_BUILD_ALL)
     # Compiled libs without warnings OSX with clang v19.1.7
